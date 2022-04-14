@@ -1,0 +1,445 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+#msg{
+  display: block;
+  margin: 0.2% 1.5% 0%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #ffffff;
+}
+
+.outer {
+  width: 100%;
+  height: 100vh;
+  background: #f6f6f6;
+  max-width: 1845px;
+  min-width: 1845px;
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+.sidebar {
+  width: 12%;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  height: 20vh;
+  background: url('../images/wiki-logo.png') center/ cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  width: 88%;
+  position: relative;
+}
+
+.edit-form {
+  position: absolute;
+  top : 10vh;
+  right: 0;
+  width: 100%;
+  height: 90vh;
+  background: #ffffff;
+}
+
+.edit-form h1 {
+  margin-bottom: 0.25em;
+  padding: 0;
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  line-height: 1.3;
+  font-size: 1.8em;
+  font-weight: normal;
+  border-bottom: 1px solid #a2a9b1;
+  margin: 2% 1.5%;
+  color: #000;
+}
+
+.edit-form p {
+  line-height: 1.6;
+  margin: 1% 1.5%;
+}
+
+.vector-menu-content {
+  margin: 1em;
+  margin-left: 0.3em;
+  padding-top: 0;
+}
+
+.vector-menu-content ul {
+  list-style: none none;
+  margin: 0;
+  padding-top: 0.3em;
+}
+
+.vector-menu-content li {
+  margin: 0;
+  padding: 0.25em 0;
+  font-size: 0.75em;
+  line-height: 1.125em;
+  word-wrap: break-word;
+}
+
+.editRequest-form {
+  margin: 1% 1.5%;
+  background-color: #ffffff;
+  width: inherit;
+  outline: 1px solid black;
+  position: relative;
+  padding: 0% 0% 1%;
+}
+
+.editRequest-form h3 {
+  display: inline-block;
+  font-size: 1.14285714em;
+  font-weight: bold;
+  margin: 2% 1.5% 1%;
+}
+
+/* .editRequest-submit-form{
+  position: relative;
+} */
+
+.editRequest-submit-form-section{
+  display: block;
+}
+
+.editRequest-submit-form-section .labelForQuote{
+  line-height: 1.42857143em;
+  margin: 0.5% 1.5% 0.1%;
+}
+
+.editRequest-submit-form-section .quote{
+  display: block;
+  margin: 0.2% 1.5% 0%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #ffffff;
+}
+
+.editRequest-submit-form-section .quote:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form label {
+  line-height: 1.42857143em;
+  margin: 0.5% 1.5% 0.1%;
+}
+.editRequest-submit-form .dropdown-source{
+  display: flex;
+  position: relative;
+}
+
+.editRequest-submit-form .dropdown-source .indicator-down{
+  position: absolute;
+  background: url(../images/down.svg) center/ cover;
+  height: 0.9em;
+  width: 1em;
+  right: 50%;
+  top: 50%;
+  transform: translate(100%,-75%);
+}
+
+.editRequest-submit-form .editRequest-source {
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.editRequest-submit-form select:focus {
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form .editRequest-button {
+  /* position: sticky; */
+  margin: 1% 1.5% 1%;
+  padding: 0.7%;
+  color: #ffffff;
+  background-color: #36c;
+  border-color: #36c;
+  bottom: 0%;
+  font-weight: bold;
+  line-height: 1.42857143em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.editRequest-submit-form-section .menus{
+  margin: 0 0 2%;
+}
+
+.editRequest-submit-form-section .menus .website .website-link{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .website .website-link:focus{
+  outline: blue solid 1.5px;
+} 
+
+.editRequest-submit-form-section .menus .website .labelForWebsite-link{
+  line-height: 1.42857143em;
+  margin: 0.5% 1.5% 0.1%;
+}
+
+.editRequest-submit-form-section .menus .book .isbn-no{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .book .isbn-no:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form-section .menus .book .book-other-options{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+}
+.editRequest-submit-form-section .menus .book .book-other-options .topic{
+  display: inline;
+  margin: 0 0.5% 0 0;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+} 
+
+.editRequest-submit-form-section .menus .book .book-other-options .page-no{
+  display: inline;
+  margin: 0 0 0 0.5%;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options1{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+}
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options2{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+}
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options1 .paperName{
+  display: inline;
+  margin: 0 0.5% 0 0;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+} 
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options1 .paperDate{
+  display: inline;
+  margin: 0 0 0 0.5%;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options2 .location{
+  display: inline;
+  margin: 0 0.5% 0 0;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+} 
+
+.editRequest-submit-form-section .menus .news-paper .news-other-options2 .article{
+  display: inline;
+  margin: 0 0 0 0.5%;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.controller{
+  margin: 0% 1.5% 0.5%;
+  width: 50%;
+  background: #f6f6f6;
+  padding: 0.6142857em;
+  border: 0.1px solid black;
+} 
+.controller select:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form-section .menus .book .book-link{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .book .book-link:focus{
+  outline: blue solid 1.5px;
+} 
+
+.editRequest-submit-form-section .menus .news-paper .news-link{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .news-paper .news-link:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-controller-section{
+  display: block;
+  line-height: 1.42857143em;
+  margin: 0.5% 1.5% 0.1%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #eaecf0;
+}
+
+.edit-summary{
+  display: block;
+}
+.edit-summary input{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 97%;
+  padding: 0.6142857em;
+  background: #ffffff;
+  border: 0.1px solid black;
+} 
+
+.edit-summary input:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-controller-section .notifications{
+  display: block;
+  margin: 1.5% 1.5% 0.5%;
+}
+
+.editRequest-controller-section .notifications label{
+  margin: 0 0.5%;
+}
+
+.editRequest-controller-section .notifications select{
+  width: 15%;
+  padding: 0.3142857em;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-link{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-link:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-other-options1{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-other-options2{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-other-options1 .journalName{
+  display: inline;
+  margin: 0 0.5% 0 0;
+  width: 49.5%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+} 
+
+.editRequest-submit-form-section .menus .journal .journal-other-options1 .journalDate{
+  display: inline;
+  margin: 0 0 0 0.5%;
+  width: 49.5%;
+  padding: 0.4142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .journal .journal-other-options2 .author{
+  display: inline;
+  margin: 0 0.5% 0 0;
+  width: 100%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .other .other-link{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .other .other-text{
+  display: block;
+  margin: 0.2% 1.5% 0.5%;
+  width: 50%;
+  padding: 0.6142857em;
+  background: #f6f6f6;
+  border: 0.1px solid black;
+}
+
+.editRequest-submit-form-section .menus .other .other-link:focus{
+  outline: blue solid 1.5px;
+}
+
+.editRequest-submit-form-section .menus .other .other-text:focus{
+  outline: blue solid 1.5px;
+}
+
+a {
+  text-decoration: none;
+}

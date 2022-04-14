@@ -1,0 +1,109 @@
+{{!-- Home Page --}}
+<div class="container outer">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+                <li><a href="/"><span>Main page</span></a></li>
+                <li><a href="/"><span>Contents</span></a></li>
+                <li><a href="/"><span>Current events</span></a></li>
+                <li><a href="/"><span>Random article</span></a></li>
+                <li><a href="/"><span>About Wikipedia</span></a></li>
+                <li><a href="/"><span>Contact us</span></a></li>
+                <li><a href="/"><span>Donate</span></a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="edit-form">
+            <h1 id="firstHeading">Edit Request:Validation Form</h1>
+            <p>User is requested to provide a source with their edit request. A source is a document required for
+                evidence by the user. User is requested to provide a source with their edit request. A source is a
+                document required for evidence by the user. User is requested to provide a source with their edit
+                request. A source is a document required for evidence by the user. User is requested to provide a source
+                with their edit request. A source is a document required for evidence by the user. User is requested to
+                provide a source with their edit request. A source is a document required for evidence by the user. User
+                is requested to provide a source with their edit request. A source is a document required for evidence
+                by the user. User is requested to provide a source with their edit request. A source is a document
+                required for evidence by the user. User is requested to provide a source with their edit request. A
+                source is a document required for evidence by the user. </p>
+            <div class="main-form">
+                <form action="" onsubmit="validateAndRequest(); return false;">
+                    <div class="editRequest-form">
+                        <h3>Edit Request Validation Form</h3>
+                        <div id="msg"></div>
+                        <div class="editRequest-submit-form">
+                            <div class="editRequest-submit-form-section">
+                                <label for="quote" class="labelForQuote">Enter Quote:</label>
+                                <textarea name="quote" id="quote" class="quote" cols="30" rows="10"
+                                    placeholder="Enter your quote here" required></textarea>
+                                <div class="controller">
+                                    <select aria-label="Default select example" required>
+                                        <option selected value="0">Insert</option>
+                                        <option value="1">Wiki markup</option>
+                                        <option value="2">Symbols</option>
+                                        <option value="3">Latin</option>
+                                        <option value="3">Greek</option>
+                                        <option value="3">Cyrillic</option>
+                                        <option value="3">Hebrew</option>
+                                        <option value="3">Arabic</option>
+                                        <option value="3">IPA(English)</option>
+                                        <option value="3">IPA</option>
+                                        <option value="3">Math and logic</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="editRequest-submit-form-section">
+                                <label for="source">Select Source:</label>
+                                <div class="dropdown-source">
+                                    <select name="source" id="source" class="editRequest-source"
+                                        onchange="selectType()" required>
+                                        <option value="">Select</option>
+                                        <option value="website">Website</option>
+                                        <option value="book">Book</option>
+                                        <option value="news-paper">News Paper</option>
+                                        <option value="scientific-journal">Scientific Journal</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="indicator-down"></span>
+                                </div>
+                            </div>
+                            <div class="editRequest-submit-form-section">
+                                <div id="menus" class="menus">
+
+                                </div>
+                            </div>
+                            <div class="editRequest-controller-section">
+                                <div class="edit-summary">
+                                    <label for="editSummary" class="labelEditSummary">Edit summary (Briefly describe
+                                        your
+                                        changes)</label>
+                                    <input type="text" name="editSummary" id="editSummary" class="editSummary" required>
+                                </div>
+                                <div class="notifications">
+                                    <input type="checkbox" name="minorEdit" id="minorEdit" class="minorEdit">
+                                    <label for="minorEdit" class="labelMinorEdit">This is a minor edit</label>
+                                    <input type="checkbox" name="watchPage" id="watchPage" class="watchPage">
+                                    <label for="watchPage" class="labelWatchPage">Watch This Page</label>
+                                    <select name="watchPageDropdown" id="watchPageDropdown" class="watchPageDropdown"
+                                        disabled>
+                                        <option value="permanent">Permanent</option>
+                                        <option value="1-week">1 Week</option>
+                                        <option value="1-month">1 Month</option>
+                                        <option value="3-month">3 Month</option>
+                                        <option value="6-month">6 Month</option>
+                                    </select>
+                                </div>
+                                <button class="editRequest-button">Edit Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/lib/jquery.min.js"></script>
+<script src="static/js/app/index.js"></script>
