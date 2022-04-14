@@ -63,6 +63,9 @@ var validateSource = async function (req, res, next) {
     allText = allText.replace(/\s/g,'');
     quote = quote.replace(/(\r\n|\n|\r)/gm, "");
     quote = quote.replace(/\s/g,'');
+    console.log(allText);
+    console.log('\n');
+    console.log(quote);
     if (allText.includes(quote)) {
         return res.status(200).json({
             success: true,
