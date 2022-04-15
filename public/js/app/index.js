@@ -1,6 +1,6 @@
 /** 
  * Index.js File for all js functions and api calls from frontend
-*/
+ */
 function clear(params) {
     $('#msg').html('');
 }
@@ -84,7 +84,7 @@ async function showErr(err) {
 
 //function to validate quote
 async function validateTextarea() {
-    return !(/^(.)\1{1,}$/.test($('#quote').val()));
+    return !(/^\s*$/.test($('#quote').val()));
 }
 
 //main function for all validations
