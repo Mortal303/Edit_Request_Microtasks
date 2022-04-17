@@ -11,7 +11,7 @@ Then you will see a webpage something like this
 Now you enter a quote from a valid source to complete your edit request.
 If you enter a null string or same charatcher repeated in complete string, you will recive an error saying "Not a Valid Quote" on submiting the form.
 
-<p align="left"><img src="public/images/invalidQuote1.png"></p> <p align="center"><img src="public/images/invalidQuote2.png"></p> <p align="right"><img src="public/images/invalidQuote3.png"></p>
+<p align="center"><img src="public/images/invalidQuote1.png"></p>
 
 Function to validate Quote is as follows in [./public/js/app/index.js](./public/js/app/index.js) file.
 
@@ -31,7 +31,7 @@ If your provided link does not exist or is broken then you will recive an error 
 
 The api call which validates the url of a source is written in [./public/js/app/index.js](./public/js/app/index.js) and [./api/resources/domain/domain.controller.js](./api/resources/domain/domain.controller.js).
 
-<p align="left"><img src="public/images/validateUrl.png"></p> <p align="right"><img src="public/images/validateUrl2.png"></p>
+<p align="center"><img src="public/images/validateUrl.png"></p> <p align="center"><img src="public/images/validateUrl2.png"></p>
 
 
 # Validating The Quote
