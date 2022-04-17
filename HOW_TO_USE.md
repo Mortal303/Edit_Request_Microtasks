@@ -3,7 +3,7 @@
 
 # Entering A Quote
 
-First you need you go to my microtask at [https://bvfdbvjk.com](https://abhigya-pandey-editrequest.herokuapp.com/).
+First you need you go to my microtask at [https://abhigya-pandey-editrequest.herokuapp.com/](https://abhigya-pandey-editrequest.herokuapp.com/).
 Then you will see a webpage something like this
 
 <p align="center"><img src="public/images/home.png"></p>
