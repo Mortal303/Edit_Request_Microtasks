@@ -3,12 +3,12 @@
 
 # Entering A Quote
 
-First you need you go to my microtask at [https://abhigya-pandey-editrequest.herokuapp.com/](https://abhigya-pandey-editrequest.herokuapp.com/).
-Then you will see a webpage something like this
+First you need to go at my microtask [https://abhigya-pandey-editrequest.herokuapp.com/](https://abhigya-pandey-editrequest.herokuapp.com/).
+Then you will see a webpage something like -
 
 <p align="center"><img src="public/images/home.png"></p>
 
-Now you enter a quote from a valid source to complete your edit request.
+Now enter a quote from a valid source to complete your edit request.
 If you enter a null string or same charatcher repeated in complete string, you will recive an error saying "Not a Valid Quote" on submiting the form.
 
 <p align="center"><img src="public/images/invalidQuote1.png"></p>
@@ -29,7 +29,7 @@ If your provided link does not exist or is broken then you will recive an error 
 
 <p align="center"><img src="public/images/invalidSource.png"></p>
 
-The api call which validates the url of a source is written in [./public/js/app/index.js](./public/js/app/index.js) and [./api/resources/domain/domain.controller.js](./api/resources/domain/domain.controller.js).
+The API call which validates the URL of a source is written in [./public/js/app/index.js](./public/js/app/index.js) and [./api/resources/domain/domain.controller.js](./api/resources/domain/domain.controller.js).
 
 <p align="center"><img src="public/images/validateUrl.png"></p> <p align="center"><img src="public/images/validateUrl2.png"></p>
 
@@ -41,7 +41,7 @@ If your provided quote that does not exist on the given source then you will rec
 
 <p align="center"><img src="public/images/quoteFromSource.png"></p>
 
-The api call which validates the url of a source is written in [./public/js/app/index.js](./public/js/app/index.js) and [./api/resources/domain/domain.controller.js](./api/resources/domain/domain.controller.js) and validation is done using cheerio web scrapper.
+The API call which validates the URL of a source is written in [./public/js/app/index.js](./public/js/app/index.js) and [./api/resources/domain/domain.controller.js](./api/resources/domain/domain.controller.js), validation is done using cheerio web scrapper.
 
 <p align="left"><img src="public/images/quoteFromSource1.png"></p> <p align="right"><img src="public/images/quoteFromSource2.png"></p>
 
